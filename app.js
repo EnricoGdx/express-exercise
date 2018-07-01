@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 var path = require('path');
 var expressValidator = require('express-validator');
 var mongojs = require('mongojs');
-var db = mongojs('customerapp', ['users']);
+var db = mongojs('mongodb://Prova:Password1@ds125181.mlab.com:25181/express-exercise', ['users']);
 var ObjectId = mongojs.ObjectId;
 
 const port = process.env.PORT || 8080;
